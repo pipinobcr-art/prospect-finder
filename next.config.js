@@ -3,5 +3,8 @@ const nextConfig = {
   images: {
     remotePatterns: [{ protocol: "https", hostname: "**" }],
   },
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
+  },
 };
 module.exports = nextConfig;
